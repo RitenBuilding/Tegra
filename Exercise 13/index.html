@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Conta Telefônica</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 300px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Conta Telefônica</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="minutesUsed">Quantidade de minutos consumidos:</label>
+    <input type="number" id="minutesUsed">
+  </div>
+  
+  <button onclick="calculatePhoneBill()">Calcular Valor a Pagar</button>
+  
+  <h2>Resultado:</h2>
+  <p><span id="billAmount"></span></p>
+  
+  <script src="Exercise13.js"></script>
+</body>
+</html>

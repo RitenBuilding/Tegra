@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maior Distância de Arremesso de Dardo</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 250px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Maior Distância de Arremesso de Dardo</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="throw1">Medida da 1ª tentativa (metros):</label>
+    <input type="number" id="throw1" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="throw2">Medida da 2ª tentativa (metros):</label>
+    <input type="number" id="throw2" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="throw3">Medida da 3ª tentativa (metros):</label>
+    <input type="number" id="throw3" step="0.01">
+  </div>
+  
+  <button onclick="findMaxDistance()">Encontrar Maior Distância</button>
+  
+  <h2>Resultado:</h2>
+<p>Maior distância de arremesso: <span id="maxDistance"></span></p>
+  
+  <script src="Exercise16.js"></script>
+</body>
+</html>

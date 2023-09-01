@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Troco</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 250px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Troco</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="unitPrice">Preço unitário do produto:</label>
+    <input type="number" id="unitPrice" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="quantity">Quantidade de unidades compradas:</label>
+    <input type="number" id="quantity">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="amountPaid">Valor pago pelo cliente:</label>
+    <input type="number" id="amountPaid" step="0.01">
+  </div>
+  
+  <button onclick="calculateChange()">Calcular Troco</button>
+  
+  <h2>Resultado:</h2>
+  <p>Troco a ser devolvido: R$<span id="changeResult"></span></p>
+  
+  <script src="Exercise14.js"></script>
+</body>
+</html>

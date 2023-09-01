@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Raízes de Equação do Segundo Grau</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .input-label {
+      flex: 0 0 300px;
+      margin-right: 10px;
+    }
+
+    #resultado {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Raízes de Equação do Segundo Grau</h1>
+
+  <div class="input-group">
+    <label class="input-label" for="coefficientA">Coeficiente a:</label>
+    <input type="number" id="coefficientA" step="0.01">
+  </div>
+
+  <div class="input-group">
+    <label class="input-label" for="coefficientB">Coeficiente b:</label>
+    <input type="number" id="coefficientB" step="0.01">
+  </div>
+
+  <div class="input-group">
+    <label class="input-label" for="coefficientC">Coeficiente c:</label>
+    <input type="number" id="coefficientC" step="0.01">
+  </div>
+
+  <button onclick="calculateRoots()">Calcular Raízes</button>
+
+  <div id="resultado">
+    <h2>Resultado:</h2>
+    <p>Raízes da equação: x1 = <span id="rootX1"></span>, x2 = <span id="rootX2"></span></p>
+  </div>
+
+  <script src="Exercise12.js"></script>
+</body>
+</html>

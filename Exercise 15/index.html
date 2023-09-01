@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classificação de Glicose no Sangue</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 250px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Classificação de Glicose no Sangue</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="glucoseLevel">Quantidade de glicose (mg/dl):</label>
+    <input type="number" id="glucoseLevel" step="1">
+  </div>
+  
+  <button onclick="classifyGlucose()">Classificar Glicose</button>
+  
+  <h2>Resultado:</h2>
+  <p>Classificação da glicose: <span id="glucoseClassification"></span></p>
+  
+  <script src="Exercise15.js"></script>
+</body>
+</html>

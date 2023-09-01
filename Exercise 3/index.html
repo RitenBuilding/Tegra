@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Idade Média</title>
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 200px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Idade Média</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="name1">Nome da pessoa 1:</label>
+    <input type="text" id="name1">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="age1">Idade da pessoa 1:</label>
+    <input type="number" id="age1">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="name2">Nome da pessoa 2:</label>
+    <input type="text" id="name2">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="age2">Idade da pessoa 2:</label>
+    <input type="number" id="age2">
+  </div>
+  
+  <button onclick="calculateAverageAge()">Calcular Média</button>
+  
+  <h2>Resultado:</h2>
+  <p>Média de idade entre <span id="nameResult1"></span> e <span id="nameResult2"></span>: <span id="averageAgeResult"></span></p>
+  
+  <script src="Exercise3.js"></script>
+</body>
+</html>

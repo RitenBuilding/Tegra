@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Pagamento de Funcionário</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 300px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Pagamento de Funcionário</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="employeeName">Nome do(a) funcionário(a):</label>
+    <input type="text" id="employeeName">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="hourlyRate">Valor por hora:</label>
+    <input type="number" id="hourlyRate" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="hoursWorked">Quantidade de horas trabalhadas:</label>
+    <input type="number" id="hoursWorked">
+  </div>
+  
+  <button id="calculateButton">Calcular Pagamento</button>
+  
+  <div id="resultSection" style="display: none;">
+    <h2>Resultado:</h2>
+    <p>O(a) funcionário(a) <span id="nameResult"></span> receberá R$<span id="paymentResult"></span> pelo trabalho realizado.</p>
+  </div>
+  
+  <script src="Exercise6.js"></script>
+</body>
+</html>

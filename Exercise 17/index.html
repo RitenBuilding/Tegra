@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificação de Múltiplos</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 250px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Verificação de Múltiplos</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="number1">Primeiro número inteiro:</label>
+    <input type="number" id="number1">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="number2">Segundo número inteiro:</label>
+    <input type="number" id="number2">
+  </div>
+  
+  <button onclick="checkMultiples()">Verificar Múltiplos</button>
+  
+  <h2>Resultado:</h2>
+  <p>Um número é múltiplo do outro: <span id="multiplesResult"></span></p>
+  
+  <script src="Exercise17.js"></script>
+</body>
+</html>

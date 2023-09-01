@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Temperatura</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 250px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Conversor de Temperatura</h1>
+  
+  <div class="input-group">
+    <label class="input-label">Informe a temperatura na escala:</label>
+    <input type="radio" id="celsius" name="scale" value="Celsius">
+    <label for="celsius">Celsius</label>
+    <input type="radio" id="fahrenheit" name="scale" value="Fahrenheit">
+    <label for="fahrenheit">Fahrenheit</label>
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="temperature">Temperatura:</label>
+    <input type="number" id="temperature" step="0.01">
+  </div>
+  
+  <button onclick="convertTemperature()">Converter</button>
+  
+  <h2>Resultado:</h2>
+  <p>Temperatura convertida: <span id="convertedTemperature"></span></p>
+  
+  <script src="Exercise18.js"></script>
+</body>
+</html>

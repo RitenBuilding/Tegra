@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Áreas</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 200px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Áreas</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="sideA">Medida A:</label>
+    <input type="number" id="sideA" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="sideB">Medida B:</label>
+    <input type="number" id="sideB" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="heightC">Medida C:</label>
+    <input type="number" id="heightC" step="0.01">
+  </div>
+  
+  <button onclick="calculateAreas()">Calcular Áreas</button>
+  
+  <h2>Resultados:</h2>
+  <p>Área do quadrado: <span id="squareAreaResult"></span></p>
+  <p>Área do triângulo retângulo: <span id="triangleAreaResult"></span></p>
+  <p>Área do trapézio: <span id="trapezoidAreaResult"></span></p>
+  
+  <script src="Exercise8.js"></script>
+</body>
+</html>

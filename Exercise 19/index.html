@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cálculo de Aumento Salarial</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 250px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cálculo de Aumento Salarial</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="salary">Salário da pessoa:</label>
+    <input type="number" id="salary" step="0.01">
+  </div>
+  
+  <button onclick="calculateSalaryIncrease()">Calcular Aumento</button>
+  
+  <h2>Resultado:</h2>
+  <p>Novo salário: R$<span id="newSalary"></span></p>
+  <p>Aumento de salário: R$<span id="salaryIncrease"></span></p>
+  <p>Porcentagem de aumento: <span id="percentageIncrease"></span>%</p>
+  
+  <script src="Exercise19.js"></script>
+</body>
+</html>

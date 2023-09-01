@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soma de Números no Intervalo</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 250px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Soma de Números no Intervalo</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="startNumber">Número inicial:</label>
+    <input type="number" id="startNumber">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="endNumber">Número final:</label>
+    <input type="number" id="endNumber">
+  </div>
+  
+  <button onclick="calculateSum()">Calcular Soma</button>
+  
+  <h2>Resultado:</h2>
+  <p>Soma dos números no intervalo: <span id="sumResult"></span></p>
+  
+  <script src="Exercise20.js"></script>
+</body>
+</html>

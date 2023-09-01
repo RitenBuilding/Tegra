@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Retângulo</title>
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 200px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Retângulo</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="base">Base do retângulo:</label>
+    <input type="number" id="base" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="height">Altura do retângulo:</label>
+    <input type="number" id="height" step="0.01">
+  </div>
+  
+  <button onclick="calculateRectangle()">Calcular</button>
+  
+  <h2>Resultados:</h2>
+  <p>Área: <span id="areaResult"></span></p>
+  <p>Perímetro: <span id="perimeterResult"></span></p>
+  <p>Diagonal: <span id="diagonalResult"></span></p>
+  
+  <script src="Exercise2.js"></script>
+</body>
+</html>

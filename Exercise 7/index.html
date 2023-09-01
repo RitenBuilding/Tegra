@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Consumo de Combustível</title>
+  <meta charset="UTF-8">
+  <style>
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input-label {
+      flex: 0 0 300px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de Consumo de Combustível</h1>
+  
+  <div class="input-group">
+    <label class="input-label" for="distance">Distância total percorrida (em km):</label>
+    <input type="number" id="distance" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label class="input-label" for="fuel">Total de combustível gasto (em litros):</label>
+    <input type="number" id="fuel" step="0.01">
+  </div>
+  
+  <button onclick="calculateFuelConsumption()">Calcular Consumo Médio</button>
+  
+  <h2>Resultado:</h2>
+  <p>Consumo médio do carro: <span id="consumptionResult"></span> km/l.</p>
+  
+  <script src="Exercise7.js"></script>
+</body>
+</html>
